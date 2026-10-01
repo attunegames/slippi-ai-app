@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
+  <title>Slippi AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">Slippi <span>AI</span></div>
+    <nav>
+      <button data-tab="play" class="active">Play</button>
+      <button data-tab="train">Train a bot</button>
+      <button data-tab="setup">Setup <span id="setupDot" class="dot" hidden></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PLAY -->
+    <section id="tab-play" class="tab active">
+      <div class="grid2">
+        <div class="panel">
+          <h2>Who do you want to play?</h2>
+          <div class="seg" id="playMode">
+            <button data-mode="clone" class="active">Player clones</button>
+            <button data-mode="rank">Rank bots</button>
+            <button data-mode="mine">My bots</button>
+          </div>
+          <div class="legend">
+            <span class="t0">Easy</span><span class="t1">Medium</span><span class="t2">Hard</span><span class="t3">Expert</span><span class="t4">Top</span>
+          </div>
+
+          <div id="mode-clone">
+            <label class="lbl">Phillip plays</label>
+            <div class="chars" id="botChars"></div>
+            <label class="lbl">You'll play</label>
+            <select id="youChar"></select>
+            <p class="hint">Phillip has bots tuned for specific matchups. Telling it your character picks the best one.</p>
+          </div>
+
+          <div id="mode-rank" hidden>
+            <label class="lbl">Strength</label>
+            <div class="chips" id="ranks"></div>
+            <label class="lbl">Phillip plays</label>
+            <select id="rankChar"></select>
+            <p class="hint">Rank bots imitate players of a whole rank, not one person. Each is a 373 MB download.</p>
+          </div>
+
+          <div id="mode-mine" hidden>
+            <div id="myBotsPick" class="list"></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Match</h2>
+          <div class="model" id="modelCard"></div>
+
+          <label class="lbl">Plays like</label>
+          <div class="chips" id="profiles"></div>
+          <p class="hint" id="profilesHint"></p>
+
+          <label class="lbl">Your controller port</label>
+          <div class="seg" id="humanPort">
+            <button data-port="1" class="active">Port 1</button>
+            <button data-port="2">Port 2</button>
+          </div>
+
+          <button class="big" id="playBtn">Play</button>
+          <div class="status" id="playStatus"></div>
+          <p class="hint">Dolphin opens with your own controller settings. Pick your character and the stage; Phillip picks its character by itself. Close Dolphin to end the session.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAIN -->
+    <section id="tab-train" class="tab">
+      <div class="grid2">
+        <div class="panel">
+          <h2>1. Read your replays</h2>
+          <label class="lbl">Replay folder</label>
+          <div class="row">
+            <input id="replaysDir" readonly>
+            <button id="pickReplays">Change…</button>
+          </div>
+          <label class="lbl">Your connect code</label>
+          <input id="code" placeholder="ABCD#123" spellcheck="false">
+          <button class="wide" id="prepareBtn">Read my replays</button>
+          <div class="progress" id="prepareProgress" hidden><div></div></div>
+          <div class="status" id="prepareStatus"></div>
+
+          <div id="trainSetup" hidden>
+            <h2>2. Train</h2>
+            <label class="lbl">Character</label>
+            <div class="list" id="trainChars"></div>
+            <label class="lbl">Bot name</label>
+            <input id="botName" placeholder="My bot" maxlength="40">
+            <label class="lbl">How long</label>
+            <div class="seg" id="duration">
+              <button data-min="30">30 min</button>
+              <button data-min="120" class="active">2 hours</button>
+              <button data-min="360">6 hours</button>
+              <button data-min="720">12 hours</button>
+            </div>
+            <p class="hint">Phillip starts from a bot that already plays your character like a human, then studies your games. Longer means closer to you. It uses your CPU, so leave the PC on. You can stop early and keep what it has learned.</p>
+            <button class="big" id="trainBtn">Start training</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Training</h2>
+          <div id="trainIdle" class="empty">Nothing training right now.</div>
+          <div id="trainLive" hidden>
+            <div class="trainHead"><b id="trainTitle"></b><span id="trainTime"></span></div>
+            <div class="progress"><div id="trainBar"></div></div>
+            <svg id="lossChart" viewBox="0 0 300 90" preserveAspectRatio="none"></svg>
+            <p class="hint">The line is how often the bot's choices differ from yours (lower = closer to you). It's saved every time it improves.</p>
+            <div class="status" id="trainStatus"></div>
+            <button id="stopTrain" class="danger">Stop and keep the best so far</button>
+          </div>
+
+          <h2>My bots</h2>
+          <div id="myBots" class="list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SETUP -->
+    <section id="tab-setup" class="tab">
+      <div class="panel narrow">
+        <h2>Setup</h2>
+        <div class="check" id="chkDolphin">
+          <div><b>Slippi Dolphin</b><span class="sub"></span></div>
+          <button data-pick="dolphin">Choose folder…</button>
+        </div>
+        <div class="check" id="chkIso">
+          <div><b>Melee 1.02 ISO</b><span class="sub"></span></div>
+          <button data-pick="iso">Choose ISO…</button>
+        </div>
+        <div class="check" id="chkEngine">
+          <div><b>Phillip engine</b><span class="sub"></span></div>
+          <button id="installBtn">Install</button>
+        </div>
+        <pre class="log" id="engineLog" hidden></pre>
+        <p class="hint">Slippi Dolphin and your ISO are found automatically from the Slippi Launcher. The engine is Phillip's AI (Python, TensorFlow and JAX). It installs once and takes about 2.5 GB.</p>
+        <p class="hint">Phillip is <a href="https://github.com/vladfi1/slippi-ai" data-ext>slippi-ai by vladfi1</a>. The bots are his released models. This launcher only installs and runs them.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

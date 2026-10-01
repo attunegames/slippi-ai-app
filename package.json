@@ -1,0 +1,23 @@
+{
+  "name": "slippi-ai-app",
+  "productName": "Slippi AI",
+  "version": "0.1.0",
+  "description": "Play Melee against Phillip's player-clone bots, and train a bot on your own replays.",
+  "main": "shell/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "catalog": "node tools/build-catalog.mjs",
+    "package": "node tools/package.mjs",
+    "prepackage": "node tools/fetch-uv.mjs"
+  },
+  "author": "ZeroShot <attunegames@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "@electron/packager": "^18.3.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/attunegames/slippi-ai-app"
+  }
+}

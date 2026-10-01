@@ -1,0 +1,11 @@
+node_modules/
+dist/
+# a development checkout's own engine and downloads
+runtime/
+models/
+scratch/
+# fetched at build time by tools/fetch-uv.mjs
+vendor/uv/uv.exe
+__pycache__/
+*.log
+*.zip

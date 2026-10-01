@@ -1,0 +1,2290 @@
+{
+ "source": "https://www.dropbox.com/scl/fo/mg916t9exid4stqmx2bjf/AD2oysY7SbTa6N0u7j75-SA?rlkey=baqxnfxg2uytvcz62w9o8mwzt",
+ "urlTemplate": "https://www.dropbox.com/scl/fo/mg916t9exid4stqmx2bjf/{id}/{name}?rlkey=baqxnfxg2uytvcz62w9o8mwzt&dl=1",
+ "models": [
+  {
+   "name": "bronze",
+   "id": "AKfbsECUiNQ8ARwWe45hHCQ",
+   "sizeMB": 372.99,
+   "kind": "rank",
+   "rank": "bronze",
+   "version": 3
+  },
+  {
+   "name": "diamond",
+   "id": "AM2YJ7U-BDnZ8IObiFxVfJw",
+   "sizeMB": 372.99,
+   "kind": "rank",
+   "rank": "diamond",
+   "version": 3
+  },
+  {
+   "name": "diamond-v2",
+   "id": "ACcHbsPdXa8d2nAilepwYzc",
+   "sizeMB": 91.13,
+   "kind": "rank",
+   "rank": "diamond",
+   "version": 2
+  },
+  {
+   "name": "dk_d18_imitation_v2",
+   "id": "AGBmOvmlKjo7iGjm4CEvyf4",
+   "sizeMB": 40.13,
+   "kind": "imitation",
+   "character": "dk",
+   "delay": 18,
+   "version": [
+    2,
+    0
+   ]
+  },
+  {
+   "name": "dk_d18_vs_fox",
+   "id": "ABi1J_udRibaHS0D7v308mM",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "dk",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "dk_d21_vs_falcon_v6.1",
+   "id": "AB3TWEPGUtR9EsmqOKvI1Ds",
+   "sizeMB": 170.92,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "dk",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "dk_d21_vs_falcon_v6.2",
+   "id": "AKUIXePWUoIggphpRtwqCog",
+   "sizeMB": 170.92,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "dk",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "doc_d18_imitation_v3",
+   "id": "AOigWSZfGvUkNT5MB8VOI7o",
+   "sizeMB": 40.13,
+   "kind": "imitation",
+   "character": "doc",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "doc_d18_vs_puff",
+   "id": "AOw70nk7Bm-PCdYBgAKivG0",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "doc",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falco_d18_ditto_v4",
+   "id": "AFl7fQoImKkbwGb-tDY_mmk",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "falco",
+   "delay": 18,
+   "version": [
+    4,
+    0
+   ]
+  },
+  {
+   "name": "falco_d18_imitation_v3",
+   "id": "AMeXfasA1l8p80FTG9POA3s",
+   "sizeMB": 40.37,
+   "kind": "imitation",
+   "character": "falco",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "falco_d18_vs_falcon",
+   "id": "ADaLqpC_-77N4P51Da2t9zM",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "falco",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falco_d18_vs_fox_v4",
+   "id": "AGR53pvbtEvvlyv30UWXMBo",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "falco",
+   "delay": 18,
+   "version": [
+    4,
+    0
+   ]
+  },
+  {
+   "name": "falco_d18_vs_ics",
+   "id": "AENTJWtfYT-i9EMx4yIZcFg",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "popo",
+   "character": "falco",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falco_d18_vs_marth_v3",
+   "id": "ABwj7qjj9iLFugRFdCTYx3U",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "falco",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "falco_d18_vs_peach",
+   "id": "AJhh4bd2wOc-X_pCFx21aMY",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "peach",
+   "character": "falco",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falco_d18_vs_puff",
+   "id": "APtLZtcn3rUIgven3KeX_ag",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "falco",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falco_d18_vs_samus",
+   "id": "AE8jEdaRDdzKFqZ08W2mpZA",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "samus",
+   "character": "falco",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falco_d18_vs_sheik",
+   "id": "AFfGQgOl2qIzx11RdzzsmD4",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "sheik",
+   "character": "falco",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falco_d18_vs_yoshi",
+   "id": "AKxienn23UA-9V2-YbFDL44",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "yoshi",
+   "character": "falco",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falco_d21_ditto_v4",
+   "id": "AFkL3Vu_7B-ZXgiRLIkrGOg",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    4,
+    0
+   ]
+  },
+  {
+   "name": "falco_d21_ditto_v6.1",
+   "id": "AJVq1BNHaEZDPyw5wDaNm8g",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "falco_d21_ditto_v6.2",
+   "id": "AE5ErJGFkjhc7aaEjAP4k5Q",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "falco_d21_vs_fox_v6.1",
+   "id": "AJaUTuP1Ziy4w38L6cbF1xA",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "falco_d21_vs_fox_v6.2",
+   "id": "AGirJTD8H8nHbFDmd_tbBoA",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "falco_d21_vs_ics_diamond",
+   "id": "AHypa8TCPU1hQxylCo-hutE",
+   "sizeMB": 91.13,
+   "kind": "matchup",
+   "opponent": "popo",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falco_d21_vs_ics_medium",
+   "id": "ACoIbi1jEUYiSPzBWnEE2-g",
+   "sizeMB": 91.13,
+   "kind": "matchup",
+   "opponent": "popo",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falco_d21_vs_ics_plat",
+   "id": "ADaJASP9EQGm4BXFSvnNCKI",
+   "sizeMB": 91.13,
+   "kind": "matchup",
+   "opponent": "popo",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falco_d21_vs_marth_v6.1",
+   "id": "APSEu0y1wM-nRk1RohqYavI",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "falco_d21_vs_marth_v6.2",
+   "id": "ACyD2ix5c7bGX3Qklyyu8Cs",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "falco_d21_vs_puff_v6.1",
+   "id": "ALHTq4I2-lHhm6Yk-dvnKUc",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "falco_d21_vs_puff_v6.2",
+   "id": "ALabq8Z_fCaH1cjUK-E5aFg",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "falco_d21_vs_puff_v6.3",
+   "id": "AMKiS1ZgHo1ijMj5uzj2wRE",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "falco",
+   "delay": 21,
+   "version": [
+    6,
+    3
+   ]
+  },
+  {
+   "name": "falcon_d18_ditto_gosu",
+   "id": "AJyGFUbERSLBK9hOD_Q0Q9Y",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "cptfalcon",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falcon_d18_imitation_v3",
+   "id": "AOrJbSf3A908_16qGQTNpgo",
+   "sizeMB": 40.37,
+   "kind": "imitation",
+   "character": "cptfalcon",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "falcon_d18_vs_falco",
+   "id": "AC-knXuI96mk74sGn-fhpqU",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "cptfalcon",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falcon_d18_vs_luigi",
+   "id": "AM9du4fwwpYE8_h1xknCFKE",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "luigi",
+   "character": "cptfalcon",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falcon_d18_vs_marth",
+   "id": "ALCDJuQTpQufCVnwi4d0IxY",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "cptfalcon",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falcon_d18_vs_peach_v3",
+   "id": "AM7M8DsvDaKUXhtnHqd9Ywc",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "peach",
+   "character": "cptfalcon",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "falcon_d18_vs_pikachu",
+   "id": "AORvB9xNQkrOWhric6D7Rok",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "pikachu",
+   "character": "cptfalcon",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falcon_d18_vs_puff",
+   "id": "AGW484-OQhWXsbjfW8QF3kQ",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "cptfalcon",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falcon_d18_vs_sheik",
+   "id": "ABxdVn-1K0EWCbpJIzOJqRA",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "sheik",
+   "character": "cptfalcon",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falcon_d18_vs_yoshi",
+   "id": "AAqm56xgyocGcrW54yWZL_A",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "yoshi",
+   "character": "cptfalcon",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falcon_d21_ditto_v2",
+   "id": "AIGy3aY5o5cGKGdCCFncEcI",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "cptfalcon",
+   "delay": 21,
+   "version": [
+    2,
+    0
+   ]
+  },
+  {
+   "name": "falcon_d21_vs_dk_v6.1",
+   "id": "AHlvreesIZRy5soqE3WQgzs",
+   "sizeMB": 170.92,
+   "kind": "matchup",
+   "opponent": "dk",
+   "character": "cptfalcon",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "falcon_d21_vs_ics_gm",
+   "id": "ANKXUwfFWQLXo8X-BM5oyPI",
+   "sizeMB": 43.43,
+   "kind": "matchup",
+   "opponent": "popo",
+   "character": "cptfalcon",
+   "delay": 21,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falcon_d21_vs_ics_master",
+   "id": "AFnfwukvORD-NNh8y9lt09A",
+   "sizeMB": 43.43,
+   "kind": "matchup",
+   "opponent": "popo",
+   "character": "cptfalcon",
+   "delay": 21,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "falcon_delay_18_vs_fox",
+   "id": "AJifUKgBmhZ7ZhkSizaVJ-E",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "cptfalcon",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "fox_d18_ditto_v4",
+   "id": "AOii00QncDi3MBdTzWDrgeo",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    4,
+    0
+   ]
+  },
+  {
+   "name": "fox_d18_imitation_v3",
+   "id": "AGGw4mb3JsIYitAWlZyuHps",
+   "sizeMB": 40.13,
+   "kind": "imitation",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "fox_d18_vs_dk",
+   "id": "AFVdWBvlUlqnjTpzvIR08GE",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "dk",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "fox_d18_vs_falco_v4",
+   "id": "ANqOX1zvNDJabz50V2nXGdo",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    4,
+    0
+   ]
+  },
+  {
+   "name": "fox_d18_vs_ics",
+   "id": "AOCxAq7UBep32uHZUsr7Xwc",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "popo",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "fox_d18_vs_marth_v3.1",
+   "id": "AM7PCE6-3qi01jlbIwH3mYk",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    3,
+    1
+   ]
+  },
+  {
+   "name": "fox_d18_vs_peach_v3",
+   "id": "AJ5MX95zNcKYSprVXnW2d1c",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "peach",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "fox_d18_vs_pikachu",
+   "id": "AJS6HyDkxsGGZInEUpJJHTI",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "pikachu",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "fox_d18_vs_puff_v3",
+   "id": "AF_Svzzdt5S0VwdrZr39iBk",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "fox_d18_vs_samus_v3",
+   "id": "AM-zWSgqvGbCxPp1fyjmOnA",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "samus",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "fox_d18_vs_sheik_v3",
+   "id": "ADCoCALwlwwwPQxvmBhnvjc",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "sheik",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "fox_d18_vs_yoshi_v3",
+   "id": "ABj86EivgZSZEIXCTUPb2Zc",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "yoshi",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "fox_d21_ditto_hax_v3",
+   "id": "ANt2maXlxZdGhq5j_mPbyAI",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "fox",
+   "delay": 21,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "fox_d21_ditto_v4",
+   "id": "AEryQOEBtmjLX_8z_AYdEuI",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "fox",
+   "delay": 21,
+   "version": [
+    4,
+    0
+   ]
+  },
+  {
+   "name": "fox_d21_ditto_v6.1",
+   "id": "AHcyQ0fps0c0D7q4l3KCzJg",
+   "sizeMB": 170.59,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "fox",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "fox_d21_ditto_v6.2",
+   "id": "AGwtKFxhc__OOuxd_zx-x4s",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "fox",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "fox_d21_vs_falco_v6.1",
+   "id": "AIH7XSGi9SrRs5CmgEfCams",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "fox",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "fox_d21_vs_falco_v6.2",
+   "id": "AG8aTxKiKh1z1ABYoe8vbmg",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "fox",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "fox_d21_vs_marth_v6.1",
+   "id": "AJT88Wt_NdsF5Ien2zLqFfQ",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "fox",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "fox_d21_vs_marth_v6.2",
+   "id": "AGalEN_JzMcTdyEACmLdnac",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "fox",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "fox_d21_vs_peach_v6",
+   "id": "AHFxCiZZcGhIyuxW2B4huGg",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "peach",
+   "character": "fox",
+   "delay": 21,
+   "version": [
+    6,
+    0
+   ]
+  },
+  {
+   "name": "fox_d24_ditto_v4",
+   "id": "ACHNYVS13AjH-yXICzeNDvA",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "fox",
+   "delay": 24,
+   "version": [
+    4,
+    0
+   ]
+  },
+  {
+   "name": "fox_delay_18_vs_falcon",
+   "id": "AB6euaQWzo1yxA33m4EkcJU",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "fox",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "ganon_d18_ditto",
+   "id": "AP5DYN3xKYrSs7SIJ0_7d94",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "ganondorf",
+   "character": "ganondorf",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "ganon_d18_imitation_v2",
+   "id": "ADKFEiPenv4tDBb3d20bIpI",
+   "sizeMB": 40.13,
+   "kind": "imitation",
+   "character": "ganondorf",
+   "delay": 18,
+   "version": [
+    2,
+    0
+   ]
+  },
+  {
+   "name": "gm",
+   "id": "AI2frIdvITPIA7yUi9sw0O8",
+   "sizeMB": 372.99,
+   "kind": "rank",
+   "rank": "gm",
+   "version": 3
+  },
+  {
+   "name": "gm-v1",
+   "id": "AKZ4_4ghCpCOKNpZQv2q2PE",
+   "sizeMB": 40.38,
+   "kind": "rank",
+   "rank": "gm",
+   "version": 1
+  },
+  {
+   "name": "gm-v2",
+   "id": "AKPe6l4-peGbxIm49XKsM4Y",
+   "sizeMB": 91.13,
+   "kind": "rank",
+   "rank": "gm",
+   "version": 2
+  },
+  {
+   "name": "gold",
+   "id": "ANGO3DUMe3vBmSf4jVy1yXA",
+   "sizeMB": 372.99,
+   "kind": "rank",
+   "rank": "gold",
+   "version": 3
+  },
+  {
+   "name": "gold-v2",
+   "id": "AAWSUf0SNHIr9DKOYBm_R1c",
+   "sizeMB": 91.13,
+   "kind": "rank",
+   "rank": "gold",
+   "version": 2
+  },
+  {
+   "name": "ics_d18_ditto_v2",
+   "id": "AHDMMhzxTM7j4C4t8VkHf7I",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "popo",
+   "character": "popo",
+   "delay": 18,
+   "version": [
+    2,
+    0
+   ]
+  },
+  {
+   "name": "ics_d18_vs_falco",
+   "id": "AOwExXPRVaRcwlWbUi0Uhjk",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "popo",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "ics_d18_vs_fox",
+   "id": "APAyK3YwwoEhUsvCGFqVGKA",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "popo",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "ics_d18_vs_marth",
+   "id": "ACEPjVNIuU60Dq_rNHfbuns",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "popo",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "ics_d18_vs_puff",
+   "id": "AG0x0F8QyvrVFjddbyFSLMc",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "popo",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "ics_d18_vs_sheik",
+   "id": "AFEiNuu3vbNlRAU7VEyk3E8",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "sheik",
+   "character": "popo",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "ics_d21_imitation_v5",
+   "id": "AGB9tXHu-xkkjVWosQDjx2Q",
+   "sizeMB": 43.43,
+   "kind": "imitation",
+   "character": "popo",
+   "delay": 21,
+   "version": [
+    5,
+    0
+   ]
+  },
+  {
+   "name": "ics_d21_vs_falco_diamond",
+   "id": "AM1Vr5HbH2OjCN1tfLPrjH8",
+   "sizeMB": 43.43,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "popo",
+   "delay": 21,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "ics_d21_vs_falco_medium",
+   "id": "AGwu5o7aCEMqBDBdBaHa17c",
+   "sizeMB": 43.43,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "popo",
+   "delay": 21,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "ics_d21_vs_falco_plat",
+   "id": "ALPjrZc9NxZ8mMo_iAaT59c",
+   "sizeMB": 43.43,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "popo",
+   "delay": 21,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "ics_d21_vs_falcon_gm",
+   "id": "AOgwdumwId028DI1bfam23c",
+   "sizeMB": 43.43,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "popo",
+   "delay": 21,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "ics_d21_vs_falcon_master",
+   "id": "AL0F6QBB_pAh6Ko9BA38Fzg",
+   "sizeMB": 43.43,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "popo",
+   "delay": 21,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "link_d18_imitation_v2",
+   "id": "ANRjvVD6if0eDC1ob3Cv8c8",
+   "sizeMB": 40.13,
+   "kind": "imitation",
+   "character": "link",
+   "delay": 18,
+   "version": [
+    2,
+    0
+   ]
+  },
+  {
+   "name": "luigi_d18_imitation_v2",
+   "id": "AOJ9ImY6PtLXSU0qlXsHSeo",
+   "sizeMB": 40.13,
+   "kind": "imitation",
+   "character": "luigi",
+   "delay": 18,
+   "version": [
+    2,
+    0
+   ]
+  },
+  {
+   "name": "luigi_d18_vs_falcon",
+   "id": "ANHbZMqvXzbZCO6v2P4G4hE",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "luigi",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "luigi_d21_vs_marth_v6",
+   "id": "ABO03IAzN1S1q3xlGHhrrdg",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "luigi",
+   "delay": 21,
+   "version": [
+    6,
+    0
+   ]
+  },
+  {
+   "name": "marth_d18_ditto_v3",
+   "id": "AL7CbdV7qG-Oy_NBaLC_fqg",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "marth",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "marth_d18_imitation_v3",
+   "id": "AHu0NbnIQrgpdaewWFkrf6U",
+   "sizeMB": 40.37,
+   "kind": "imitation",
+   "character": "marth",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "marth_d18_vs_falco_v3",
+   "id": "AFuMx313uuF_-gx0syzHh0o",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "marth",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "marth_d18_vs_falcon",
+   "id": "AJ0dlKZPnbhG_2dUg1TCibg",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "marth",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "marth_d18_vs_fox_v3.1",
+   "id": "AMjh3Ttds3Bx-Roodzhk6UY",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "marth",
+   "delay": 18,
+   "version": [
+    3,
+    1
+   ]
+  },
+  {
+   "name": "marth_d18_vs_ics",
+   "id": "ABgiktI9p6r-2fvpgjdHPkY",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "popo",
+   "character": "marth",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "marth_d18_vs_peach",
+   "id": "AMoU7PqzcFfgmUyWQ0-Ct64",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "peach",
+   "character": "marth",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "marth_d18_vs_pikachu",
+   "id": "AF6627e3V9lk9xdDNkXWVOg",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "pikachu",
+   "character": "marth",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "marth_d18_vs_puff_v3",
+   "id": "AFC9isTCM7cqjatKkdGCJVE",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "marth",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "marth_d18_vs_samus",
+   "id": "ACv_LJY7-jOJ-ZJMmmxSxkE",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "samus",
+   "character": "marth",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "marth_d18_vs_sheik_v3",
+   "id": "AMjO2tygHBR-pzRyagD76us",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "sheik",
+   "character": "marth",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "marth_d18_vs_yoshi_v3",
+   "id": "AMTmNMuPzD2KGDEvAAIKZoA",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "yoshi",
+   "character": "marth",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "marth_d21_ditto_v6.1",
+   "id": "AGyymR-t_2r-Z4R9ULBz7wE",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "marth",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "marth_d21_ditto_v6.2",
+   "id": "AOw6rRiXJc7NfbdGgWRSxR8",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "marth",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "marth_d21_ditto_v6.3",
+   "id": "ADDzR0XP0mcBSsC2HADLviA",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "marth",
+   "delay": 21,
+   "version": [
+    6,
+    3
+   ]
+  },
+  {
+   "name": "marth_d21_vs_falco_v6.1",
+   "id": "AJ4mhXBvsLZ2bbJrnJFQIqE",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "marth",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "marth_d21_vs_falco_v6.2",
+   "id": "AFcP8RZ6YhOEEKufZPguN-I",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "marth",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "marth_d21_vs_falco_v6.3",
+   "id": "AD0r6I5AUNYO8t4NDQ9ndC8",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "marth",
+   "delay": 21,
+   "version": [
+    6,
+    3
+   ]
+  },
+  {
+   "name": "marth_d21_vs_fox_v6.1",
+   "id": "AC7vv21bZGTtahti5lC-f4A",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "marth",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "marth_d21_vs_fox_v6.2",
+   "id": "AByQ5xuv6eTRmKbTp4COIno",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "marth",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "marth_d21_vs_fox_v6.3",
+   "id": "AK6zabcG3UrSwBlZtsUOLTA",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "marth",
+   "delay": 21,
+   "version": [
+    6,
+    3
+   ]
+  },
+  {
+   "name": "marth_d21_vs_fox_v6.4",
+   "id": "AAK7KgZsExZPOOSUNqqL1ho",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "marth",
+   "delay": 21,
+   "version": [
+    6,
+    4
+   ]
+  },
+  {
+   "name": "marth_d21_vs_fox_v6.5",
+   "id": "AHuSIEElo5njkOGuuFWAfdo",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "marth",
+   "delay": 21,
+   "version": [
+    6,
+    5
+   ]
+  },
+  {
+   "name": "marth_d21_vs_luigi_v6",
+   "id": "AI_iI_KPG1-ckz5MDcMzpQQ",
+   "sizeMB": 170.58,
+   "kind": "matchup",
+   "opponent": "luigi",
+   "character": "marth",
+   "delay": 21,
+   "version": [
+    6,
+    0
+   ]
+  },
+  {
+   "name": "master",
+   "id": "AIvQqeG0uR55u0qYEKujoIc",
+   "sizeMB": 372.99,
+   "kind": "rank",
+   "rank": "master",
+   "version": 3
+  },
+  {
+   "name": "master-v2",
+   "id": "ANwNPOWtLISKrAeCrwsES_M",
+   "sizeMB": 91.13,
+   "kind": "rank",
+   "rank": "master",
+   "version": 2
+  },
+  {
+   "name": "medium-v1",
+   "id": "AMC9ihXGkkZ6lngNeyk2uhc",
+   "sizeMB": 40.38,
+   "kind": "general",
+   "characters": [
+    "fox",
+    "falco",
+    "marth",
+    "sheik",
+    "jigglypuff",
+    "cptfalcon",
+    "peach",
+    "yoshi",
+    "popo",
+    "luigi",
+    "pikachu",
+    "samus"
+   ],
+   "version": 1
+  },
+  {
+   "name": "medium-v2",
+   "id": "AKrE7vdmvtztKCsX4ceD0WA",
+   "sizeMB": 91.13,
+   "kind": "general",
+   "characters": [
+    "fox",
+    "falco",
+    "marth",
+    "sheik",
+    "jigglypuff",
+    "cptfalcon",
+    "peach",
+    "yoshi",
+    "popo",
+    "luigi",
+    "pikachu",
+    "samus"
+   ],
+   "version": 2
+  },
+  {
+   "name": "peach_d18_ditto_v3",
+   "id": "AA-c1RJbVqsQJ2pGLfPKvTM",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "peach",
+   "character": "peach",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "peach_d18_imitation_v3",
+   "id": "ANQBRnIBmWIoKuotAxTscHg",
+   "sizeMB": 40.37,
+   "kind": "imitation",
+   "character": "peach",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "peach_d18_vs_falco",
+   "id": "ANwCgxE-FYrSrwMDAvSqZTU",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "peach",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "peach_d18_vs_falcon_v3",
+   "id": "ALEgrZKrqM7P3X0u21jHV1o",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "peach",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "peach_d18_vs_fox_v3",
+   "id": "AMFlw1e_obnLIua6JwqmKzo",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "peach",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "peach_d18_vs_marth",
+   "id": "AFj5DalZuE3vFXOqIs3OUkI",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "peach",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "peach_d18_vs_pikachu",
+   "id": "AIhc75YhBVln1fryvjvmT68",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "pikachu",
+   "character": "peach",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "peach_d18_vs_puff",
+   "id": "AG3x0m-q2Ajk4vyUE9T64as",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "peach",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "peach_d18_vs_sheik",
+   "id": "AOzrOHQWerUxAMP2kSfPS5o",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "sheik",
+   "character": "peach",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "peach_d18_vs_yoshi_v3",
+   "id": "AIastIXVkOrdFlCwIZU4I5Y",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "yoshi",
+   "character": "peach",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "peach_d21_vs_fox_v6.2",
+   "id": "AFWT0NofwylRKwKrgS4sMeg",
+   "sizeMB": 170.46,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "peach",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "pikachu_d18_imitation_v3",
+   "id": "ANYOKXmyhJp4nQ9jU_IQaRs",
+   "sizeMB": 40.37,
+   "kind": "imitation",
+   "character": "pikachu",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "pikachu_d18_vs_falcon",
+   "id": "AIYPb867ewNQtoKVFFtgJlc",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "pikachu",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "pikachu_d18_vs_fox",
+   "id": "AP-q7A4boqE6B-eswFOgDcE",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "pikachu",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "pikachu_d18_vs_marth",
+   "id": "ACJ4aHiCZHH15lrboVxTGcM",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "pikachu",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "pikachu_d18_vs_peach",
+   "id": "ANzHZbrerfV8rT9eEkA3YtI",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "peach",
+   "character": "pikachu",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "pikachu_d18_vs_puff",
+   "id": "AAju7m2JEmaT6-DldOdu9zo",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "pikachu",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "plat",
+   "id": "AKCnL4iLfie3MAja2yNS9QQ",
+   "sizeMB": 372.99,
+   "kind": "rank",
+   "rank": "plat",
+   "version": 3
+  },
+  {
+   "name": "plat-v2",
+   "id": "ADXLeMkHULiGi8D7HrPwfi4",
+   "sizeMB": 91.13,
+   "kind": "rank",
+   "rank": "plat",
+   "version": 2
+  },
+  {
+   "name": "puff_d18_ditto_v3",
+   "id": "AONYi2SN_VY7SUl7wkfBhDs",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "jigglypuff",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "puff_d18_imitation_v3",
+   "id": "AF7E9xPsdZFr76Awk2kZFz8",
+   "sizeMB": 40.13,
+   "kind": "imitation",
+   "character": "jigglypuff",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "puff_d18_vs_doc",
+   "id": "AOrKZ2pcSGdQ68PYGHhkFm8",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "doc",
+   "character": "jigglypuff",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "puff_d18_vs_falco",
+   "id": "APWZsUYavf6b6kyfMED_PA4",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "jigglypuff",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "puff_d18_vs_falcon",
+   "id": "AKdzbOMtYZLeQfHKiLti5kg",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "jigglypuff",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "puff_d18_vs_fox_v3",
+   "id": "AIUWEnrEZpFFceTeuXT_0Ag",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "jigglypuff",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "puff_d18_vs_ics",
+   "id": "AGRay1FiA7aEIxoceKTLM6c",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "popo",
+   "character": "jigglypuff",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "puff_d18_vs_marth_v3",
+   "id": "AMAarxjZqiLckNGaH6D7IMM",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "jigglypuff",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "puff_d18_vs_peach",
+   "id": "AOqp3LHDeg34MMSNITRKpAw",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "peach",
+   "character": "jigglypuff",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "puff_d18_vs_pikachu",
+   "id": "AN6foF7WWXbPo-Oa2MSQfl4",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "pikachu",
+   "character": "jigglypuff",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "puff_d18_vs_sheik",
+   "id": "AAA21AnOyd4ONvrATyE8NK8",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "sheik",
+   "character": "jigglypuff",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "puff_d18_vs_yoshi",
+   "id": "AA8ngwzyKLAdv6ooSJDIpjE",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "yoshi",
+   "character": "jigglypuff",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "puff_d21_vs_falco_v6.1",
+   "id": "AOfWkdLT1VKxi4FljOaJgXQ",
+   "sizeMB": 170.46,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "jigglypuff",
+   "delay": 21,
+   "version": [
+    6,
+    1
+   ]
+  },
+  {
+   "name": "puff_d21_vs_falco_v6.2",
+   "id": "AL6Ah7oBYRzpgvMP4t0c_fk",
+   "sizeMB": 170.46,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "jigglypuff",
+   "delay": 21,
+   "version": [
+    6,
+    2
+   ]
+  },
+  {
+   "name": "puff_d21_vs_falco_v6.3",
+   "id": "AL2zv-j3iQvrh0OVtkFAP_s",
+   "sizeMB": 170.46,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "jigglypuff",
+   "delay": 21,
+   "version": [
+    6,
+    3
+   ]
+  },
+  {
+   "name": "samus_d18_imitation_v3",
+   "id": "AGfedy6-Sk-ySWxGUu1bA-4",
+   "sizeMB": 40.13,
+   "kind": "imitation",
+   "character": "samus",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "samus_d18_vs_falco",
+   "id": "AMVmPqAdhUvuyu1pLI9IqK0",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "samus",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "samus_d18_vs_fox_v3",
+   "id": "AE2os9ek_I6LLNiD7dGuEvw",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "samus",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "samus_d18_vs_marth",
+   "id": "AAEYGM1wVhOY0r7ZK8jp0zI",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "samus",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "SFIL",
+   "id": "AJ3PL8rUzWKZtLuX0MD4cN8",
+   "sizeMB": 40.37,
+   "kind": "other"
+  },
+  {
+   "name": "sheik_d18_imitation_v4",
+   "id": "AHGSZGIfN90K2S6VB39UDgA",
+   "sizeMB": 40.37,
+   "kind": "imitation",
+   "character": "sheik",
+   "delay": 18,
+   "version": [
+    4,
+    0
+   ]
+  },
+  {
+   "name": "sheik_d18_vs_falco",
+   "id": "AO5Vcsw84g2IpbXAbpzH9Ds",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "sheik",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "sheik_d18_vs_falcon",
+   "id": "AM4CirtEm2dCQeDt1JVqYJI",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "sheik",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "sheik_d18_vs_fox_v3",
+   "id": "AHHLfzAOg4YrEYWntM6oZn4",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "sheik",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "sheik_d18_vs_ics",
+   "id": "AImd4nNsj_jcDagkfIcKHgM",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "popo",
+   "character": "sheik",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "sheik_d18_vs_marth_v3",
+   "id": "APJTFcTPVE-8ReWNrraw5mI",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "sheik",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "sheik_d18_vs_peach",
+   "id": "AJzvAkWeUL2ePyh-3z5jXa4",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "peach",
+   "character": "sheik",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "sheik_d18_vs_puff",
+   "id": "AN2Ab8mS0BWfSl63R1Q2ZQU",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "sheik",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "sheik_d18_vs_yoshi_v4",
+   "id": "AF75Wv7pNw81JtSvREQTf7g",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "yoshi",
+   "character": "sheik",
+   "delay": 18,
+   "version": [
+    4,
+    0
+   ]
+  },
+  {
+   "name": "silver",
+   "id": "APDMoX-KJPAucW8l6ASV1uE",
+   "sizeMB": 372.99,
+   "kind": "rank",
+   "rank": "silver",
+   "version": 3
+  },
+  {
+   "name": "silver-v2",
+   "id": "ALOBB7mTSza-Eve5YHIqOe8",
+   "sizeMB": 91.13,
+   "kind": "rank",
+   "rank": "silver",
+   "version": 2
+  },
+  {
+   "name": "super-gm",
+   "id": "AOOVqPwRHWpLcBY2ERyoi6E",
+   "sizeMB": 372.99,
+   "kind": "rank",
+   "rank": "super-gm",
+   "version": 3
+  },
+  {
+   "name": "yoshi_d18_ditto",
+   "id": "AB_KLnWD8CPLYok7rsaE2Rw",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "yoshi",
+   "character": "yoshi",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "yoshi_d18_imitation_v3",
+   "id": "AF1HsdFbxTcWHyM9gymkPZs",
+   "sizeMB": 40.37,
+   "kind": "imitation",
+   "character": "yoshi",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "yoshi_d18_vs_falco",
+   "id": "AG5NCkJdeIIxcRMkT4Lones",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "falco",
+   "character": "yoshi",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "yoshi_d18_vs_falcon",
+   "id": "ADX62PM2lp4pHPx6RhFutBM",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "cptfalcon",
+   "character": "yoshi",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "yoshi_d18_vs_fox_v3",
+   "id": "AH4DvDP0y1Hrrg8mjD4j8l4",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "fox",
+   "character": "yoshi",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "yoshi_d18_vs_marth_v3",
+   "id": "AJO9rhO0ig_JvwUx0R1qbW4",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "marth",
+   "character": "yoshi",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "yoshi_d18_vs_peach_v3",
+   "id": "APjJVHoajAmaoNMSoXENR14",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "peach",
+   "character": "yoshi",
+   "delay": 18,
+   "version": [
+    3,
+    0
+   ]
+  },
+  {
+   "name": "yoshi_d18_vs_puff",
+   "id": "ANH6FiZVAt-osAEz8jGGPKY",
+   "sizeMB": 40.13,
+   "kind": "matchup",
+   "opponent": "jigglypuff",
+   "character": "yoshi",
+   "delay": 18,
+   "version": [
+    0,
+    0
+   ]
+  },
+  {
+   "name": "yoshi_d18_vs_sheik_v4",
+   "id": "AKU9LKzJgF-3v9lbQycRpj0",
+   "sizeMB": 40.37,
+   "kind": "matchup",
+   "opponent": "sheik",
+   "character": "yoshi",
+   "delay": 18,
+   "version": [
+    4,
+    0
+   ]
+  }
+ ]
+}
