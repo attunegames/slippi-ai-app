@@ -388,6 +388,8 @@ function datasetDir(code) {
 
 async function prepare({ replays, code }) {
   if (jobs.prepare) throw new Error("Already reading replays.");
+  // Reading rebuilds the training set, which a running training is using.
+  if (jobs.train) throw new Error("Wait for training to finish (or stop it) before reading replays again.");
   saveSettings({ replays, code });
   let summary = null;
   const result = await run("prepare", PYTHON, [

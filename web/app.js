@@ -491,14 +491,40 @@ function trainableCharacters() {
   return new Set(state.catalog.filter((m) => m.kind === "imitation").map((m) => m.character));
 }
 
+// What happened to the replays, step by step, so a screenshot of this message
+// says which step lost them.
+function explainNoGames(s) {
+  const st = s?.stats;
+  if (!st) return "No usable games found for that connect code. Check the code and the folder.";
+  const code = $("#code").value.trim().toUpperCase();
+  const lines = [`No usable games for ${code}.`];
+  if (!st.files) {
+    lines.push("There are no .slp replays in that folder. Use Change… to pick the folder your replays are saved in.");
+    return lines.join("\n");
+  }
+  lines.push(`Replays in the folder: ${st.files}`);
+  if (st.unreadable) lines.push(`Couldn't be read: ${st.unreadable}`);
+  if (st.not_1v1) lines.push(`Doubles or other non-1v1 games: ${st.not_1v1}`);
+  lines.push(`1v1 games without ${code}: ${st.others}`);
+  lines.push(`Your 1v1 games: ${st.mine}`);
+  const filtered = Object.entries(st.filtered ?? {}).filter(([, n]) => n > 0);
+  if (filtered.length) lines.push(`Left out of training: ${filtered.map(([why, n]) => `${n} ${why}`).join(", ")}`);
+
+  const top = (st.top_codes ?? []).map(([c, n]) => `${c} (${n})`).join(", ");
+  if (!st.mine && top) lines.push(`Codes found most often: ${top}. If one of those is you, enter it instead.`);
+  if (st.unreadable > st.files / 2)
+    lines.push("Most replays couldn't be read. If the folder is in OneDrive, right-click it and choose \"Always keep on this device\", then try again.");
+  return lines.join("\n");
+}
+
 function renderSummary() {
   const s = state.summary;
   if (!s || !s.games) {
-    setStatus("#prepareStatus", "No usable games found for that connect code. Check the code and the folder.", "error");
+    setStatus("#prepareStatus", explainNoGames(s), "error");
     $("#trainSetup").hidden = true;
     return;
   }
-  setStatus("#prepareStatus", `Found ${s.games} usable games${s.new ? ` (${s.new} new)` : ""}.`, "good");
+  setStatus("#prepareStatus", `Found ${s.games} usable games.`, "good");
   const ok = trainableCharacters();
   const chars = Object.entries(s.characters);
   // Under this many games there's too little of you to learn from.
