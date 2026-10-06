@@ -1,7 +1,7 @@
 {
   "name": "slippi-ai-app",
   "productName": "Slippi AI",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Play Melee against Phillip's player-clone bots, and train a bot on your own replays.",
   "main": "shell/main.cjs",
   "scripts": {

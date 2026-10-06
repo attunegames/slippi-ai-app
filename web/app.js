@@ -487,8 +487,15 @@ api.on("prepare", (e) => {
   setStatus("#prepareStatus", `${STAGES[e.stage] ?? e.stage}… ${e.done ?? ""}${e.total ? ` / ${e.total}` : ""}${found}`);
 });
 
-function trainableCharacters() {
+// Characters with their own starting bot. Any other character starts from
+// vladfi's general bot instead (see trainingBase in shell/main.cjs).
+const GENERAL_BASE = "medium-v1";
+function ownStartingBot() {
   return new Set(state.catalog.filter((m) => m.kind === "imitation").map((m) => m.character));
+}
+function trainableCharacters() {
+  if (state.catalog.some((m) => m.name === GENERAL_BASE)) return new Set(Object.keys(NAMES));
+  return ownStartingBot();
 }
 
 // What happened to the replays, step by step, so a screenshot of this message
@@ -535,7 +542,7 @@ function renderSummary() {
   if (!state.trainChar || !ok.has(state.trainChar)) state.trainChar = can[0]?.[0] ?? null;
   $("#trainChars").innerHTML = can.map(([c, n]) =>
     `<div class="item pick ${c === state.trainChar ? "active" : ""}" data-c="${c}">
-      <div class="grow"><b>${charName(c)}</b><span>${n} games${n < 50 ? " · few games, the bot will be rough" : ""}</span></div></div>`).join("")
+      <div class="grow"><b>${charName(c)}</b><span>${n} games${n < 50 ? " · few games, the bot will be rough" : ""}${ownStartingBot().has(c) ? "" : " · starts from Phillip's general bot"}</span></div></div>`).join("")
     + (few.length ? `<p class="hint">Too few games to train (under ${MIN_GAMES}): ${few.map(([c, n]) => `${charName(c)} (${n})`).join(", ")}.</p>` : "")
     + (cannot.length ? `<p class="hint">Phillip has no starting bot yet for: ${cannot.map(([c, n]) => `${charName(c)} (${n})`).join(", ")}.</p>` : "");
   $("#trainSetup").hidden = false;

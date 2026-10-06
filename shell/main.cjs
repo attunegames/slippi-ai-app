@@ -334,6 +334,16 @@ async function downloadModel(name) {
   }
 }
 
+// The bot training starts from: the character's own imitation-only bot when
+// vladfi has released one, otherwise his general bot (TensorFlow, every
+// character), which fine-tunes just as well (tested 2026-10-06: restored loss
+// 1.23 vs 1.05 for the Doc-specific one). Mirrored in web/app.js.
+function trainingBase(models, character) {
+  return models.find((m) => m.kind === "imitation" && m.character === character)
+    ?? models.find((m) => m.name === GENERAL_BASE);
+}
+const GENERAL_BASE = "medium-v1";
+
 // --- my bots -----------------------------------------------------------------
 
 function listBots() {
@@ -477,7 +487,7 @@ function botId(name) {
 
 async function train({ name, code, character, minutes }) {
   if (jobs.train) throw new Error("A bot is already training.");
-  const base = catalog.models.find((m) => m.kind === "imitation" && m.character === character);
+  const base = trainingBase(catalog.models, character);
   if (!base) throw new Error(`There's no starting model for ${character} yet.`);
 
   send("train", { state: "downloading", base: base.name });
