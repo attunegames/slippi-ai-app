@@ -1,7 +1,7 @@
 // The page's only door to the app: request/response calls plus event streams.
 const { contextBridge, ipcRenderer } = require("electron");
 
-const EVENTS = ["engine", "download", "play", "prepare", "train"];
+const EVENTS = ["engine", "download", "play", "prepare", "train", "catalog"];
 
 contextBridge.exposeInMainWorld("phillip", {
   call: (channel, arg) => ipcRenderer.invoke(channel, arg),

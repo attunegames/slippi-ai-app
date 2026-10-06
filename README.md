@@ -45,7 +45,7 @@ The launcher is an Electron window over slippi-ai's own scripts:
   - gives your connect code the model's least-used player slot;
   - uses the `spawn` start method on Windows, which has no `forkserver`.
 
-The models are vladfi1's, downloaded on demand from his public [Dropbox folder](https://www.dropbox.com/scl/fo/mg916t9exid4stqmx2bjf/AD2oysY7SbTa6N0u7j75-SA?rlkey=baqxnfxg2uytvcz62w9o8mwzt). This launcher does not redistribute them.
+The models are vladfi1's, downloaded on demand from his public [Google Drive folder](https://drive.google.com/drive/folders/1etYN_IgVoUPleAsh76s_9443e4XzGKWo). The app reads that folder's listing at startup, so bots he adds or moves show up without an update. This launcher does not redistribute them.
 
 ## Development
 
@@ -53,7 +53,7 @@ The models are vladfi1's, downloaded on demand from his public [Dropbox folder](
 git clone --recurse-submodules https://github.com/attunegames/slippi-ai-app
 npm install
 npm start               # run from source
-npm run catalog         # rebuild catalog/models.json from tools/dropbox-listing.txt
+npm run catalog         # rebuild catalog/models.json (the offline model list) from vladfi's Drive folder
 npm run package         # build dist/Slippi AI-win32-x64
 ```
 

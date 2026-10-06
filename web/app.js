@@ -279,7 +279,7 @@ function renderMatch() {
       <div class="progress"><div style="width:${dl.describing ? 100 : pct}%"></div></div></div>`;
   } else {
     const what = describeModel(choice.model);
-    card.innerHTML = `${tierBadge(tierOf(choice.model))}<div class="what"><b>${esc(choice.label)}</b><span>${what} · ${Math.round(choice.model.sizeMB)} MB</span></div>
+    card.innerHTML = `${tierBadge(tierOf(choice.model))}<div class="what"><b>${esc(choice.label)}</b><span>${what}${choice.model.sizeMB ? ` · ${Math.round(choice.model.sizeMB)} MB` : ""}</span></div>
       ${ready ? `<span class="status good">Ready</span>` : `<button id="dlBtn">Download</button>`}`;
     $("#dlBtn")?.addEventListener("click", () => downloadModel(choice.model.name));
   }
@@ -595,7 +595,7 @@ api.on("train", (e) => {
     $("#trainIdle").hidden = false;
     $("#trainIdle").textContent = e.state === "done"
       ? "Training finished. Your bot is under My bots, and in Play → My bots."
-      : `Training stopped before anything was saved.\n${e.error ?? ""}`;
+      : e.beforeStart ? e.error : `Training stopped before anything was saved.\n${e.error ?? ""}`;
     $("#trainIdle").className = e.state === "done" ? "status good" : "status error";
     loadBots();
   }
@@ -641,6 +641,13 @@ function setStatus(sel, text, kind = "") {
 function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 }
+
+// vladfi's model folder was re-read at startup and may list new bots.
+api.on("catalog", async () => {
+  await loadCatalog();
+  renderPlayPickers();
+  renderMatch();
+});
 
 async function loadCatalog() {
   state.catalog = await call("catalog");

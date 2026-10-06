@@ -199,18 +199,55 @@ async function installEngine() {
 
 // --- models ----------------------------------------------------------------------
 
-const catalog = readJson(path.join(ROOT, "catalog", "models.json"), { models: [] });
+const catalogLib = require("./catalog.cjs");
+const CATALOG_CACHE = path.join(DATA, "catalog.json");
+
+// The newest model list we have: the last one read from vladfi's folder, else
+// the one shipped with the app. refreshCatalog() replaces it at startup.
+let catalog = readJson(CATALOG_CACHE, null) ?? readJson(path.join(ROOT, "catalog", "models.json"), { models: [] });
+
+async function refreshCatalog() {
+  try {
+    const res = await fetch(catalogLib.LISTING_URL);
+    if (!res.ok) return;
+    const entries = catalogLib.parseListing(await res.text());
+    // An empty or tiny list means the page changed or something failed;
+    // keep what we have rather than hide every bot.
+    if (entries.length < 20) return;
+    const sizes = Object.fromEntries(catalog.models.filter((m) => m.sizeMB).map((m) => [m.name, m.sizeMB]));
+    catalog = catalogLib.buildCatalog(entries, sizes);
+    fs.writeFileSync(CATALOG_CACHE, JSON.stringify(catalog));
+    send("catalog", { count: catalog.models.length });
+  } catch {
+    // Offline: the list we already have is fine.
+  }
+}
 
 function modelPath(name) { return path.join(MODELS, name); }
 
 function modelInfo(file) { return readJson(file + ".json", null); }
 
+// A model only counts as downloaded once it has been read successfully
+// (model_info.py writes the .json beside it) and the file really is a model:
+// v0.1.1 could save a host's error page in its place.
+function isDownloaded(name) {
+  const file = modelPath(name);
+  return fs.existsSync(file) && !fs.existsSync(file + ".part") && !!modelInfo(file) && looksLikeModel(file);
+}
+
 function listCatalog() {
   return catalog.models.map((m) => {
-    const file = modelPath(m.name);
-    const have = fs.existsSync(file) && !fs.existsSync(file + ".part");
-    return { ...m, downloaded: have, info: have ? modelInfo(file) : null };
+    const have = isDownloaded(m.name);
+    return { ...m, downloaded: have, info: have ? modelInfo(modelPath(m.name)) : null };
   });
+}
+
+// Network errors in words a player can act on.
+function explainNetworkError(err, what) {
+  const code = err?.code ?? err?.cause?.code;
+  if (["ENOTFOUND", "EAI_AGAIN", "ECONNREFUSED", "ECONNRESET", "ETIMEDOUT", "ENETUNREACH"].includes(code))
+    return `Couldn't download ${what}: no connection to Google Drive. Check your internet connection and try again. (This is only needed once per bot.)`;
+  return `Couldn't download ${what}: ${err?.message ?? err}`;
 }
 
 function download(url, dest, onProgress, redirects = 0) {
@@ -223,7 +260,7 @@ function download(url, dest, onProgress, redirects = 0) {
       }
       if (res.statusCode !== 200) {
         res.resume();
-        return reject(new Error(`Download failed (HTTP ${res.statusCode}).`));
+        return reject(new Error(`the server answered HTTP ${res.statusCode}.`));
       }
       const total = Number(res.headers["content-length"] || 0);
       let done = 0, last = 0;
@@ -233,11 +270,25 @@ function download(url, dest, onProgress, redirects = 0) {
         if (Date.now() - last > 200) { last = Date.now(); onProgress(done, total); }
       });
       res.pipe(out);
-      out.on("finish", () => out.close(() => resolve()));
+      out.on("finish", () => out.close(() => resolve({ bytes: done })));
       res.on("error", reject);
       out.on("error", reject);
     }).on("error", reject);
   });
+}
+
+// Models are Python pickles, which start with byte 0x80. Hosts that refuse a
+// download (a dead link, a quota page, a network filter) answer 200 with a
+// web page instead, which must never be saved as a bot.
+function looksLikeModel(file) {
+  const fd = fs.openSync(file, "r");
+  try {
+    const head = Buffer.alloc(1);
+    fs.readSync(fd, head, 0, 1, 0);
+    return head[0] === 0x80;
+  } finally {
+    fs.closeSync(fd);
+  }
 }
 
 async function describeModel(file) {
@@ -253,21 +304,34 @@ async function downloadModel(name) {
   const entry = catalog.models.find((m) => m.name === name);
   if (!entry) throw new Error(`Unknown model ${name}`);
   const file = modelPath(name);
-  if (fs.existsSync(file) && !fs.existsSync(file + ".part") && modelInfo(file)) return modelInfo(file);
+  if (isDownloaded(name)) return modelInfo(file);
 
   const url = catalog.urlTemplate.replace("{id}", entry.id).replace("{name}", encodeURIComponent(name));
+  const forget = () => ["", ".part", ".json"].forEach((x) => fs.rmSync(file + x, { force: true }));
   fs.writeFileSync(file + ".part", "");
   try {
-    await download(url, file, (done, total) => send("download", { name, done, total }));
+    const { bytes } = await download(url, file, (done, total) => send("download", { name, done, total }));
+    if (!looksLikeModel(file)) {
+      forget();
+      throw Object.assign(new Error(
+        `Couldn't download ${name}: Google Drive sent a web page instead of the bot. ` +
+        "The file may have moved or hit Drive's download limit. Try again later."), { friendly: true });
+    }
+    if (!entry.sizeMB) entry.sizeMB = Math.round(bytes / 1e4) / 100;
   } catch (err) {
-    fs.rmSync(file, { force: true });
-    throw err;
+    forget();
+    throw err.friendly ? err : new Error(explainNetworkError(err, name));
   }
   fs.rmSync(file + ".part", { force: true });
   send("download", { name, describing: true });
-  const info = await describeModel(file);
-  send("download", { name, finished: true });
-  return info;
+  try {
+    const info = await describeModel(file);
+    send("download", { name, finished: true });
+    return info;
+  } catch (err) {
+    forget();
+    throw err;
+  }
 }
 
 // --- my bots -----------------------------------------------------------------
@@ -417,7 +481,12 @@ async function train({ name, code, character, minutes }) {
   if (!base) throw new Error(`There's no starting model for ${character} yet.`);
 
   send("train", { state: "downloading", base: base.name });
-  await downloadModel(base.name);
+  try {
+    await downloadModel(base.name);
+  } catch (err) {
+    send("train", { state: "failed", beforeStart: true, error: err.message });
+    return;
+  }
 
   const id = botId(name);
   const out = path.join(BOTS, id);
@@ -519,6 +588,7 @@ app.whenReady().then(() => {
     webPreferences: { preload: path.join(__dirname, "preload.cjs"), contextIsolation: true },
   });
   win.loadFile(path.join(ROOT, "web", "index.html"));
+  refreshCatalog();
   // Start loading Phillip right away, while the player looks around.
   startServer(loadSettings().lastMode ?? "tf");
 });
